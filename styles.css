@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Karla:wght@200;400&family=Lexend+Deca&family=Nunito:wght@200&family=Open+Sans:wght@300;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%, 0.2);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-db: hsl(216, 12%, 8%);
+}
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--very-db);
+    font-family: Overpass; 
+}
+
+.main__container {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+}
+
+.card {
+    background-color: var(--dark-blue);
+    max-width: 380px;
+    max-height: 500px;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.card__image {
+    position: relative;
+    margin-top: -15px;
+    top: 20px;
+    width: fit-content;
+    padding: .8rem;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: -4px;
+}
+
+.card__text-light {
+    color: var(--light-grey);
+    line-height: 25px;
+    text-align: left;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.card__button {
+    text-align: center;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+    color: var(--light-grey);
+    margin-bottom: 20px;
+}
+
+.card__button:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.card__button:active {
+    background-color: var(--orange);
+}
+
+button { 
+  border: none;
+  color: var(--white);
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 13px;
+  background-color: var(--orange);
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
